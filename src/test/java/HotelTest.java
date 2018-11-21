@@ -28,11 +28,11 @@ public class HotelTest {
         assertEquals(0,hotel.getTill());
     }
 
-    //    @Test
-//    public void increaseTill() {
-//        hotel.addTill();
-//        assertEquals(1, hotel.getTill());
-//    }
+        @Test
+    public void hotelCanIncreaseTill() {
+        hotel.increaseTill(singleRoom);
+        assertEquals(45, hotel.getTill());
+    }
 
     @Test
     public void countOfBedRooms() {

@@ -40,5 +40,8 @@ public class Hotel {
     }
 
 
-
+    public void increaseTill(BedRoom bedRoom) {
+        int price = bedRoom.getPrice();
+        till += bedRoom.getPrice();
+    }
 }

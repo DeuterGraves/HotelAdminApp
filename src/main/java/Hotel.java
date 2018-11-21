@@ -21,7 +21,7 @@ public class Hotel {
         return this.bedRooms.size();
     }
 
-    public int dingingRoomCount() {
+    public int diningRoomCount() {
         return this.diningRooms.size();
     }
 

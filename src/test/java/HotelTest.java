@@ -40,7 +40,7 @@ public class HotelTest {
     }
     @Test
     public void countOfDingingRooms() {
-        assertEquals(0, hotel.dingingRoomCount());
+        assertEquals(0, hotel.diningRoomCount());
     }
     @Test
     public void countOfEventSpaces() {
@@ -58,7 +58,7 @@ public class HotelTest {
     @Test
     public void canAddDiningRoom() {
         hotel.addDiningRoom(diningRoom);
-        assertEquals(1, hotel.dingingRoomCount());
+        assertEquals(1, hotel.diningRoomCount());
 
     }
 
@@ -70,11 +70,34 @@ public class HotelTest {
     }
 
     @Test
-    public void canCheckInToRoom() {
+    public void canAddGuestToRoom() {
         singleRoom.addGuest(guest);
 
         assertEquals(1, singleRoom.guestCount());
     }
+
+//    search for available rooms
+//    search for booked rooms
+//    search available rooms with capacity of minimum x?
+
+    /*
+    check in to include:
+    - identify the room
+    - add guests to room
+    - change room booked status
+    - increase til by room price
+    - idenfity booked guest
+    - decrease booked guests' wallet by room price
+     */
+
+/* check out to include:
+- identify room being checked out of
+- clear guests
+- change room booked status
+ */
+
+
+
 
 
 }

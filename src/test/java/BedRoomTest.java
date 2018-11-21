@@ -69,4 +69,16 @@ public class BedRoomTest {
         bedRoom.addGuest(guest);
         assertEquals(guest,bedRoom.firstGuest());
     }
+
+    @Test
+    public void hasBookedStatus(){
+        assertEquals(false, bedRoom.isBooked());
+    }
+
+    @Test
+    public void canBeBooked(){
+        bedRoom.setBooking(true);
+        assertEquals(true, bedRoom.isBooked());
+    }
 }
+

@@ -61,4 +61,15 @@ public class DiningRoomTest {
         diningRoom.addGuest(guest);
         assertEquals(guest,diningRoom.firstGuest());
     }
+
+    @Test
+    public void hasBookedStatus(){
+        assertEquals(false, diningRoom.isBooked());
+    }
+
+    @Test
+    public void canBeBooked(){
+        diningRoom.setBooking(true);
+        assertEquals(true, diningRoom.isBooked());
+    }
 }

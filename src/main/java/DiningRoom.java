@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class DiningRoom {
     private int capacity;
+    private boolean booked;
 //    private String hours;
     private ArrayList<Guest> guestList;
     private String name;
@@ -9,6 +10,7 @@ public class DiningRoom {
 
     public DiningRoom(int capacity, String name, int price ){
         this.capacity = capacity;
+        this.booked = false;
 //        this.hours = hours;
         this.guestList = new ArrayList<>();
         this.name = name;
@@ -45,5 +47,13 @@ public class DiningRoom {
 
     public Guest firstGuest() {
         return guestList.get(0);
+    }
+
+    public boolean isBooked() {
+        return booked;
+    }
+
+    public void setBooking(boolean booked) {
+        this.booked = booked;
     }
 }

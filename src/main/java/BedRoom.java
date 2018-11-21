@@ -4,6 +4,7 @@ public class BedRoom {
     private String type;
     private int roomNumber;
     private int capacity;
+    private boolean booked;
 //    private String bookedGuest;
     private ArrayList<Guest> guestList;
     private int price;
@@ -12,6 +13,7 @@ public class BedRoom {
         this.type = type;
         this.roomNumber = roomNumber;
         this.capacity = capacity;
+        this.booked = false;
 //        this.bookedGuest = Guest guest;
         this.guestList = new ArrayList<>();
         this.price = price;
@@ -56,6 +58,14 @@ public class BedRoom {
 
     public Guest firstGuest() {
        return guestList.get(0);
+    }
+
+    public boolean isBooked() {
+        return booked;
+    }
+
+    public void setBooking(boolean booked) {
+        this.booked = booked;
     }
 }
 
